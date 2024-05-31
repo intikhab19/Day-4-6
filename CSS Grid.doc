@@ -1,0 +1,21 @@
+Container properties:
+1)grid-template-column: [first] 120px [second] 200px [third] 300px;  3 coulmns with given number of pixels will form
+2)grid-template-row: [first] 120px [second] 200px [third] 300px;  3 rows with given number of pixels will form
+3)grid-template-area: "nav nav nav " "side article article" "footer footer footer";    (break area into 3 parts, 2 parts and 3 parts)
+4)grid-template-column: 1fr 2fr 1fr; (1:2:1) columns will divide in this ratio of avaliable space
+5)row-gap:10px;
+6)column-gap:10px;
+7)align-item:center(can apply other properties as well);
+8)justify-item:center(can apply other items);
+9)grid-template-column: repeat(4, 1fr) four columns will form of 1fr
+10)grid-template-column: repeat(4, minmax(100px 1fr)); minimum column length will be 100px and maximum length will be 1fr  (use to make flexible website)
+11)justify-content:any property; horizontally if their is space between grids and container
+12)align-content:any property; vertically if their is space between grids and container
+13)place-container:any property; will align horizontally and vertically
+
+Item properties:
+1)grid-row: first/third or 1/3; row starts from line 1 and ends on line 3        (you can over lap grids)    we can name rows and column using [] when making grids.
+2)grid-column: first/third or 1/3; column starts from line 1 and ends on line 3  (you can over lap grids)    we can name rows and column using [] when making grids.
+3)grid-area:nav; if i gave this to item 1 it will take nav area and if i gave grid
+4)grid-area:side; if i gave this to item 2 it will take side area
+5)align-self: start(can apply other properties);

@@ -1,0 +1,31 @@
+CSS Felx Box
+
+  flex box concepts
+   1) Main axis  poperties apply relative to this axis     for column main axis is vertical   for row main axis is horizontal
+   2) Cross axis  opposit of main axis
+   3) main end
+   4) main start
+   5) cross end
+   6) cross start
+
+   flex-start   tragets start of main axis
+   flex-end     targets end of main axis
+
+Container Properties:
+1) display: flex;  use flex Properties  (item will allign in column as  default)
+2) justify-content: any property;   align hozizontally 
+3) align-item: any property;   align vertically
+4) flex-direction: column/row/column-reverse/row-reverse;  lay items in column or row. 
+5) flex-wrap:wrap/wrap-reverse; content will wrap around and move to a next line
+6) align-content: center(can use other properties like flex-start and flex-end); items will allign in center  (if one line use align:item;)
+7) flex-flow: row wrap/ colum wrap (look out for more properties);
+8) gap: 10px 10px; (row column px) 
+9) row-gap: ;
+10) column-gap: ;
+
+
+Item Properties:
+1)order: 1;  default order is 0. items with out order properties will come first and items will be ordered in a ascending order (small comes first)   if order is same than item will be ordered according to its position
+2)flex-grow: 1; put this on all items then flex-frow: 2; to an item(x). its size will be twice the size of other items
+3)flex-shrink: 2; item will shrink twisce as fast as other items if necessary(squeezed)
+4)self-align: flex-start(look for other properties); single item will be allign depending upon its property
